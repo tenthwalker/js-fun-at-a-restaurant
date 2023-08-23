@@ -12,28 +12,33 @@
 // var food = "Ice Cream";
 // var type = "Dessert";
 // var inStock = 10
-
-
+var food = "soup";
+var type = "side";
+var inStock = 10;
 
 // Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make 
 // the inStock count double what it currently is.
-
+// inStock = inStock*2
 
 // Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack! 
 // Use a built in math operator to decrement the inStock count by 1.
-
+// inStock = inStock -= 1
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the food you chose is your favorite food or not
-
-
+var isFavorite = true
 
 // Create a new variable named "shouldOrderMore", and use a comparison operator to
 // assign a boolean value to this variable. If "inStock" is less than 20, the
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
-
-
+var shouldOrderMore = true
+if(inStock<20){
+    var shouldOrderMore = true;
+} else {
+    var shouldOrderMore = false;
+}
+console.log(shouldOrderMore);
 
 //------------------------- Conditionals -------------------------//
 
