@@ -21,13 +21,25 @@ function formatPrice(initialPrice) {
   return "$" + initialPrice
 }
 
+function decreasePrice(initialPrice) {
+  return initialPrice * 0.9
+}
+
+function createRecipe(title, ingredients, menuItemType) {
+var recipe = {}
+recipe.title = title;
+recipe.ingredients = ingredients;
+recipe.type = menuItemType;
+return recipe;
+}
+
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
   formatPrice,
-  // decreasePrice,
-  // createRecipe
+  decreasePrice,
+  createRecipe
 }
 
 
